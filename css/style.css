@@ -1,0 +1,550 @@
+*{
+    margin: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+.header{
+    width: 100%;
+    background-color: #DCDCDC;
+}
+
+.menu-boton{
+    display: none;
+}
+
+.menu{
+    width: 100%;
+    background-color: #DCDCDC;
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding: 0px;
+}
+
+
+.menu span{
+    display: none;
+}
+
+.menu a{
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding: 10px 0px;
+}
+
+main{
+    width: 85%;
+    margin: 20px auto;
+}
+
+.redes-sociales{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.redes-sociales-banner{
+    width: 100%;
+    display: flex;
+    padding: 10px;
+}
+
+.redes-sociales-banner-logo{
+    width: 50%;
+}
+
+.redes-sociales-banner-logo img{
+    max-width: 100%;
+}
+
+.redes-sociales-banner-logo h2{
+    display: none;
+}
+
+.redes-sociales-banner ul{
+    width: 50%;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.redes-sociales-banner li{
+    margin-left: 10px;
+}
+
+.redes-sociales-banner a{
+    text-decoration: none;
+    font-size: 2.2em;
+    color: #ff2554;
+}
+
+.redes-sociales .linea{
+    width: 100%;
+    height: 1px;
+    background: #000;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.ajustes-cuenta{
+    width: 100%;
+}
+
+.ajustes-cuenta ul{
+    width: 100%;
+    padding: 40px 0px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.ajustes-cuenta li{
+    padding: 0px 10px;
+}
+
+.ajustes-cuenta span{
+    background: red;
+    padding: 10px;
+    border-radius: 50%;
+    color: white;
+    font-size: 1.5em;
+}
+
+.ajustes-cuenta a{
+    text-decoration: none;
+    color: red;
+    margin-left: 10px;
+    font-size: 1.1em;
+}
+
+.banner{
+    width: 100%;
+    margin: auto;
+    display: flex;
+}
+
+.titulo-banner{
+    width: 30%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    background: #FF0440;
+    padding: 0px 30px;
+    color: white;
+}
+
+.slider{
+    width: 70%;
+    margin: auto;
+    overflow: hidden;
+    margin: 0px 0px 0px 10px;
+}
+
+.slider ul{
+    padding: 0;
+    display: flex;
+    width: 300%;
+    animation: cambio 20s infinite;
+}
+
+.slider li{
+    list-style: none;
+    width: 100%;
+}
+
+.slider img{
+    max-width: 100%;
+}
+
+@keyframes cambio{
+    0%{margin-left: 0px;}
+    20%{margin-left: 0px;}
+
+    25%{margin-left: -100%;}
+    45%{margin-left: -100%;}
+
+    50%{margin-left: -200%;}
+    75%{margin-left: -200%;}
+}
+
+.login-descripcion{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 5px auto;
+    text-align: justify;
+    color: #53565A;
+    line-height: 1.2em;
+}
+
+.login{
+    width: 100%;
+    display: flex;
+}
+
+.login-descripcion{
+    width: 60%;
+    margin: 20px 20px 0px 0px;
+}
+
+.login-descripcion p{
+    font-size: 1.3em;
+    line-height: 1.5em;
+}
+
+.login-descripcion a{
+    color: #00A0C8;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.login-usuarios{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    margin: 5px auto;
+}
+
+.login-usuarios .login-titulo{
+    display: flex;
+    justify-content: center;
+    background: #bebebe;
+    padding: 10px 0px;
+}
+
+.login-datos{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0px   ;
+}
+
+.login-usuarios .login-label{
+    display: flex;
+    flex-direction: column;
+}
+
+.login-label label{
+    margin: 10px 0px;
+}
+
+.login-usuarios .login-input{
+    display: flex;
+    flex-direction: column;
+}
+
+.login-input input{
+    text-transform: uppercase;
+}
+
+.login-input input, select{
+    margin: 8px 0px;
+}
+
+.login-boton{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+
+.login-boton a{
+    font-size: .8em;
+    text-decoration: none;
+    color: #53565A;
+}
+
+.login-boton input{
+    background: #ff0a41;
+    color: white;
+    padding: 10px;
+    font-size: 1em;
+    margin: 10px;
+}
+
+@media screen and (max-width: 1100px){
+    .header{
+        width: 100%;
+        position: fixed;
+        top: 0;
+    }
+
+    .menu-boton{
+        width: 100%;
+        display: flex;
+        padding: 10px 20px;
+        justify-content: space-around;
+    }
+
+    .menu-logo{
+        width: 60%;
+    }
+
+    .menu-logo img{
+        width: 40%;
+    }
+
+    .menu-bar{
+        display: flex;
+        align-items: center;
+    }
+
+    .menu-bar span{
+        font-size: 2.5em;
+        color: #FF0440;
+    }
+
+    nav{
+        height: 0px;
+    }
+
+    .menu{
+        background: #dcdcdc;
+        width: 100%;
+        height: 80%;
+        padding-left: 0px;
+        padding-top: 190px;
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        transform: translateX(-100%);
+        transition: all .5s;
+        overflow-y: scroll;
+        position: fixed;
+    }
+
+    .show{
+        transform: translateX(0);
+    }
+
+    .menu .menu-item{
+        padding: 15px;
+        display: flex;
+        border-bottom: 1px solid;
+        align-items: center;
+    }
+    
+    .menu-item a{
+        color: black;
+        text-decoration: none;
+        margin-left: 15px;
+        font-size: 1.2em;
+    }
+    
+    .menu-item span{
+        display: block;
+        color: red;
+        font-size: 1.2em;
+    }
+
+    main{
+        width: 85%;
+        margin-top: 100px;
+    }
+
+    .redes-sociales-banner-logo{
+        display: flex;
+        align-items: center;
+    }
+
+    .redes-sociales-banner-logo img{
+        display: none;
+    }
+
+    .redes-sociales-banner h2{
+        display: block;
+        color: #FF0440;
+    }
+
+    .ajustes-cuenta ul{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-grow: 1;
+        justify-content: space-around;
+    }
+}
+
+@media screen and (max-width: 1050px){
+    .ajustes-cuenta li:nth-child(3){
+        margin-top: 20px;
+    }
+}   
+
+@media screen and (max-width: 800px){
+    .menu-logo img{
+        width: 60%;
+    }
+
+    main{
+        width: 90%;
+    }
+
+    .ajustes-cuenta li:nth-child(3){
+        margin-top: 20px;
+    }
+
+    .login{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .login-descripcion{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .login-usuarios{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 650px){
+    .menu-logo img{
+        width: 80%;
+    }
+
+    main{
+        width: 95%;
+        padding: 20px 0px;
+    }
+
+    .ajustes-cuenta{
+        margin-bottom: 20px;
+    }
+
+    .ajustes-cuenta ul{
+        padding: 0px;
+    }
+
+    .ajustes-cuenta li{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 10px 0px;
+    }
+
+    .ajustes-cuenta a{
+        color: black;
+    }
+
+    .ajustes-cuenta span{
+        margin-bottom: 10px;
+    }
+
+    .ajustes-cuenta a{
+        margin-top: 10px;
+    }
+
+    .banner{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .titulo-banner{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+    }
+
+    .titulo-banner h2{
+        font-size: 2em;
+    }
+
+    .titulo-banner p{
+        display: none;
+    }
+
+    .slider{
+        width: 100%;
+        margin: 10px 0px 0px 0px;
+    }
+
+    .login-usuarios{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 420px){
+    .menu-boton{
+        padding: 10px 0px;
+    }
+
+    .menu-logo img{
+        width: 100%;
+    }
+
+    .menu-item a{
+        font-size: 1em;
+    }
+
+    .menu-item span{
+        font-size: 1em;
+    }
+
+    main{
+        padding: 0px;
+    }
+
+    .redes-sociales-banner{
+        padding: 0px;
+    }
+
+    .redes-sociales-banner-logo{
+        display: none;
+    }
+
+    .redes-sociales ul{
+        width: 100%;
+        font-size: 1em;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .redes-sociales span{
+        font-size: .9em;
+    }
+
+    .redes-sociales .linea{
+        margin: 0px 0px 5px 0px;
+    }
+
+    .ajustes-cuenta li, li:nth-child(3){
+        margin: 5px;
+    }
+
+    .ajustes-cuenta span{
+        font-size: 1em;
+    }
+
+    .ajustes-cuenta a{
+        font-size: .8em;
+    }
+
+    .login-descripcion p{
+        font-size: 1em;
+    }
+
+    .login-usuarios{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 360px){
+    main{
+        margin-top: 100px;
+    }
+
+    .titulo-banner h2{
+        font-size: 1.5em;
+    }
+
+    .login-usuarios{
+        width: 100%;
+    }
+}
